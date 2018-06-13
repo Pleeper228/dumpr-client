@@ -149,7 +149,7 @@ class App extends Component {
           errorOrRedirect: 'You need to be logged in to update a bathroom!'
         })
       } else {
-        window.location = 'https://dumpr-client.herokuapp.com//app/bathrooms'
+        window.location = 'https://dumpr-client.herokuapp.com/app/bathrooms'
         // this.setState({
         //   errorOrRedirect: <Redirect to='/app/bathrooms' />
         // })
@@ -188,7 +188,7 @@ class App extends Component {
         currentBathroom.description = data.get('description')
         currentBathroom.rating = data.get('rating')
 
-        window.location = 'https://dumpr-client.herokuapp.com//app/bathrooms'
+        window.location = 'https://dumpr-client.herokuapp.com/app/bathrooms'
         // this.setState({
         //   errorOrRedirect: <Redirect to='/app/bathrooms' />
         // })
@@ -217,7 +217,7 @@ class App extends Component {
         this.setState({
           bathrooms: currentBathrooms
         })
-        window.location = 'https://dumpr-client.herokuapp.com//app/bathrooms'
+        window.location = 'https://dumpr-client.herokuapp.com/app/bathrooms'
       }
     })
   }
