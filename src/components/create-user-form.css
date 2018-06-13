@@ -1,0 +1,30 @@
+.error-msg {
+  color: red;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.input-wrapper {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.create-user-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.create-user-form input, .create-user-form textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px auto 10px auto;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+.create-user-form input[type=submit] {
+  color: #fff;
+  background-color: #128fdc;
+  cursor: pointer;
+}

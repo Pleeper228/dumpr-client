@@ -1,0 +1,75 @@
+.details-img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #252525;
+  height: 500px;
+}
+.bathroom-details-img {
+  height: 80%;
+  width: auto;
+  max-width: 100%;
+}
+.bathroom-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 400px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bathroom-details-name {
+  font-size: 32px;
+  margin-top: 50px;
+}
+.bathroom-details-address {
+  font-size: 12px;
+  font-style: italic;
+}
+.bathroom-details-description {
+  margin-top: 20px;
+}
+.bathroom-details-rating {
+  margin-top: 20px;
+}
+.bathroom-details-buttons {
+  margin-top: 30px;
+}
+.update-button {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border-style: none;
+  border-radius: 5px;
+  height: 33px;
+  background-color: #128fdc;
+  transition: .15s ease;
+}
+.update-button:hover {
+  transition: .15s ease;
+  cursor: pointer;
+  transition: .15s ease;
+  color: #b5b4b4;
+  background-color: #0c6ca7;
+}
+.delete-button {
+  margin-top: 20px;
+  margin-left: 25px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border-style: none;
+  border-radius: 5px;
+  height: 33px;
+  background-color: #ff008e;
+  transition: .15s ease;
+}
+.delete-button:hover {
+  cursor: pointer;
+  transition: .15s ease;
+  color: #b5b4b4;
+  background-color: #9c0057;
+}

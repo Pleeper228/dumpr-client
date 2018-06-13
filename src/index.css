@@ -1,0 +1,330 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Below is post reset */
+html {
+	height: 100%;
+	width: 100%;
+}
+body {
+	height: 50%;
+	width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+  background-color: #f3f5f6;
+}
+header {
+  font-weight: bold;
+  background-color: #212124;
+  justify-content: space-between;
+  /* background-color: rgba(33, 39, 39, 0.5); */
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+}
+h1 {
+  font-size: 28px;
+  padding: 10px;
+}
+h2 {
+  font-size: 18px;
+}
+h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px;
+  padding-top: 5px;
+}
+li:hover {
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+p {
+  font-size: 10px;
+  margin: 5px;
+  padding-bottom: 5px;
+}
+a {
+  cursor: pointer;
+	text-decoration: none;
+}
+img {
+  height: 100%;
+  width: 100%;
+}
+button {
+  font-size: 16px;
+  color: #fff;
+  margin: 10px;
+  height: 30px;
+  width: 100px;
+}
+button:focus {
+  outline: none;
+}
+button:hover {
+	transition: .15s ease;
+  color: #b5b4b4;
+	cursor: pointer;
+}
+footer {
+  color: #a9a8a8;
+  background-color: #212124;
+	width: 100%;
+  margin: auto;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	padding: 1rem;
+
+}
+footer p {
+  font-size: 16px;
+}
+.App-header {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  justify-content: space-between;
+}
+.App-title {
+	color: white;
+	text-decoration: none;
+}
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+.subheader {
+  background-color: #fff;
+  border: 1px solid #666;
+  position: fixed;
+  height: 90px;
+  width: 100%;
+  top: 50px;
+}
+.subheader-bottom {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #d4d0d0;
+  padding-top: 10px;
+}
+.subheader-bottom a {
+  margin-top: auto;
+}
+.splash-image {
+	margin-top: 55px;
+	height: 100%;
+}
+.content {
+  margin-top: 140px;
+  display: flex;
+	flex-direction: column;
+}
+.bathrooms-container {
+	padding: 0 11%;
+}
+.bathrooms {
+  display: flex;
+  flex-wrap: wrap;
+	height: 300px
+}
+.bathroom {
+  height: 200px;
+  padding: 5px;
+	width:auto;
+}
+
+.bathrooms-container h2  {
+	color: #212124;
+	margin-bottom: 5px;
+	margin-top: 20px;
+	padding-left: 7px;
+}
+a .bathroom:nth-child(odd) {
+  width: 290px;
+}
+ent-bathroom {
+  flex: 1;
+}
+.bathroom:hover {
+  cursor: pointer;
+}
+.bathroom:hover .bathroom-details-preview {
+  cursor: pointer;
+  opacity: 1;
+}
+.tab-underline {
+	border-bottom: 3px solid #128fdc;
+}
+.bathroom-details {
+	margin-top: 150px;
+}
+.bathroom-details-preview {
+  color: #fff;
+  background-color: rgba(33, 39, 39, 0.25);
+  transition: .5s ease;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(0%, -115%);
+}
+.bathroom-details-preview p {
+  overflow: hidden;
+  white-space: nowrap;
+}
+.search-form {
+  display: flex;
+}
+.search-bar-text {
+  font-size: 16px;
+  background-color: #d0cfcf;
+  height: 30px;
+  width: 200px;
+  border-style: none;
+  border-radius: 4px;
+	padding-left: 5px;
+  transition: ease-in-out, width .35s ease-in-out;
+}
+.search-bar-text:focus {
+	transition: .5s ease;
+  background-color: #fff;
+  outline: none;
+  width: 350px;
+}
+.search-bar-submit {
+  height: 30px;
+  width: 50px;
+}
+.log-in {
+  background-color: inherit;
+  border-style: none;
+}
+.sign-up {
+  font-weight: bold;
+  border-style: none;
+  color: #fff;
+  background-color: #128fdc;
+  border-radius: 5px;
+}
+.sign-up:hover {
+	transition: .15s ease;
+	background-color: #0c6ca7;
+}
+.crud {
+  height: 50px;
+	margin-left: 10%;
+}
+.crud button {
+  height: 100%;
+  color: #000;
+  border-style: none;
+  margin: 0;
+}
+.crud button:hover {
+  color: #000;
+  border-bottom: 3px solid #128fdc;
+}
+.login-container {
+	display: flex;
+}
+.login-triangle {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid #ffeef7;
+}
+.login-form {
+	height:250px;
+	width: 250px;
+	background-color: #ffeef7;
+	position: absolute;
+	align-content: center;
+	border-radius: 15px;
+	color: #000;
+}
+.bathroom-details-img {
+	width: 600px;
+	height:600px;
+}
+
+.start-button {
+	color: black;
+	width: auto;
+	height: auto;
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 1em 2em;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	border:none;
+	border-radius: 4px;
+}
+
+.image-container{
+	height:100vh;
+}
+
+.users-container{
+	padding: 0 11%;
+}
+
+.users-container h2{
+	color: #212124;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	padding-left: 7px;
+}

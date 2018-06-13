@@ -1,0 +1,49 @@
+.bathrooms-container {
+  display: flex;
+  flex-direction: column;
+  width: 1150px;
+  margin: auto;
+}
+.bathrooms {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.bathrooms a {
+  margin: 2px;
+}
+.bathrooms a:nth-child(odd) {
+  width: 162px;
+}
+.bathrooms a:nth-child(even) {
+  width: 322px;
+}
+.bathrooms a:nth-child(10n) {
+  width: 162px;
+}
+.bathroom {
+  height: 225px;
+  width: inherit;
+}
+.bathroom:hover .bathroom-details-preview {
+  cursor: pointer;
+  opacity: 1;
+}
+.bathroom-details-preview {
+  color: #fff;
+  background-color: rgba(33, 39, 39, 0.25);
+  transition: .5s ease;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(0%, -110%);
+  padding: 5px;
+}
+.bathroom-details-preview p {
+  margin-top: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 10px;
+  font-style: italic;
+  color: #ececec;
+}

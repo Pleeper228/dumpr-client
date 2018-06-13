@@ -1,0 +1,11 @@
+.user {
+  margin: 10px;
+  padding: 5px;
+}
+.users-container {
+  display: flex;
+  flex-direction: column;
+  width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+}
