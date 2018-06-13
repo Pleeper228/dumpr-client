@@ -57,7 +57,7 @@ class App extends Component {
       })
     }
 
-    fetch('http://localhost:3000/api/v1/bathrooms/')
+    fetch('https://dumpr-server.herokuapp.com/api/v1/bathrooms/')
     .then(res => res.json())
     .then(res => {
       this.setState({
@@ -65,7 +65,7 @@ class App extends Component {
       })
     })
 
-    fetch('http://localhost:3000/api/v1/users/')
+    fetch('https://dumpr-server.herokuapp.com/api/v1/users/')
     .then(res => res.json())
     .then(res => {
       this.setState({
@@ -102,7 +102,7 @@ class App extends Component {
     console.log('heyyoooo')
 
     var data = new FormData(event.target)
-    fetch('http://localhost:3000/api/v1/users/', {
+    fetch('https://dumpr-server.herokuapp.com/api/v1/users/', {
       method: 'POST',
       body: JSON.stringify({
         user_name: data.get('username'),
@@ -118,7 +118,7 @@ class App extends Component {
         })
       } else {
         console.log('heyyoooo')
-        window.location = 'http://localhost:3001/app/login'
+        window.location = 'https://dumpr-client.herokuapp.com//app/login'
         // this.setState({
         //   response: <Redirect to='/app/login' />
         // })
@@ -130,7 +130,7 @@ class App extends Component {
     event.preventDefault()
     let currentBathrooms = this.state.bathrooms
     var data = new FormData(event.target)
-    fetch('http://localhost:3000/api/v1/bathrooms/', {
+    fetch('https://dumpr-server.herokuapp.com/api/v1/bathrooms/', {
       method: 'POST',
       body: JSON.stringify({
         establishment_name: data.get('establishment_name'),
@@ -149,7 +149,7 @@ class App extends Component {
           errorOrRedirect: 'You need to be logged in to update a bathroom!'
         })
       } else {
-        window.location = 'http://localhost:3001/app/bathrooms'
+        window.location = 'https://dumpr-client.herokuapp.com//app/bathrooms'
         // this.setState({
         //   errorOrRedirect: <Redirect to='/app/bathrooms' />
         // })
@@ -163,7 +163,7 @@ class App extends Component {
     let currentBathroom = this.state.bathrooms.filter(bathroom => bathroom.id == bathroomId)
     let data = new FormData(event.target)
 
-    fetch(`http://localhost:3000/api/v1/bathrooms/${bathroomId}`, {
+    fetch(`https://dumpr-server.herokuapp.com/api/v1/bathrooms/${bathroomId}`, {
       method: 'PUT',
       body: JSON.stringify({
         establishment_name: data.get('establishment_name'),
@@ -188,7 +188,7 @@ class App extends Component {
         currentBathroom.description = data.get('description')
         currentBathroom.rating = data.get('rating')
 
-        window.location = 'http://localhost:3001/app/bathrooms'
+        window.location = 'https://dumpr-client.herokuapp.com//app/bathrooms'
         // this.setState({
         //   errorOrRedirect: <Redirect to='/app/bathrooms' />
         // })
@@ -202,7 +202,7 @@ class App extends Component {
     let currentIndex = currentBathrooms.indexOf(currentBathroom[0])
 
     event.preventDefault()
-    fetch(`http://localhost:3000/api/v1/bathrooms/${bathroomId}`, {
+    fetch(`https://dumpr-server.herokuapp.com/api/v1/bathrooms/${bathroomId}`, {
       method: 'DELETE',
       headers: getHeaders()
     })
@@ -217,7 +217,7 @@ class App extends Component {
         this.setState({
           bathrooms: currentBathrooms
         })
-        window.location = 'http://localhost:3001/app/bathrooms'
+        window.location = 'https://dumpr-client.herokuapp.com//app/bathrooms'
       }
     })
   }

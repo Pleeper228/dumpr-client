@@ -14,7 +14,7 @@ export class CreateUserForm extends React.Component {
   handleUserSubmit(event) {
     event.preventDefault()
     var data = new FormData(event.target)
-    fetch('http://localhost:3000/api/v1/users/', {
+    fetch('https://dumpr-server.herokuapp.com/api/v1/users/', {
       method: 'POST',
       body: JSON.stringify({
         user_name: data.get('username'),

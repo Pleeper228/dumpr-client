@@ -14,7 +14,7 @@ export class BathroomDetails extends React.Component {
 
   // componentDidMount() {
     // this.getBathroom()
-    // fetch(`http://localhost:3000/api/v1/bathrooms/${this.props.match.params.bathroomId}`)
+    // fetch(`https://dumpr-server.herokuapp.com/api/v1/bathrooms/${this.props.match.params.bathroomId}`)
     // .then(res => res.json())
     // .then(res => {
     //   this.setState({

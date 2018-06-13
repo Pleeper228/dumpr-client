@@ -2,7 +2,7 @@ import {getHeaders, handleErrors} from './fetchDefaults'
 
 function logIn(username, password) {
   let b64 = btoa(`${username}:${password}`)
-  return fetch('http://localhost:3000/api/v1/users/current', {
+  return fetch('https://dumpr-server.herokuapp.com/api/v1/users/current', {
     headers: new Headers({authorization: `Basic ${b64}`})
   })
   .then(handleErrors)
@@ -11,7 +11,7 @@ function logIn(username, password) {
 
 function getCurrent() {
   console.log(getHeaders())
-  return fetch('http://localhost:3000/api/v1/users/current', {
+  return fetch('https://dumpr-server.herokuapp.com/api/v1/users/current', {
     headers: getHeaders()
   })
   .then(handleErrors)

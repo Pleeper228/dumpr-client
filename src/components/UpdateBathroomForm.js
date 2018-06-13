@@ -44,7 +44,7 @@ export class UpdateBathroomForm extends React.Component {
   handlePut(event) {
     event.preventDefault()
     var data = new FormData(event.target)
-    fetch(`http://localhost:3000/api/v1/bathrooms/${this.props.routeProps.match.params.bathroomId}`, {
+    fetch(`https://dumpr-server.herokuapp.com/api/v1/bathrooms/${this.props.routeProps.match.params.bathroomId}`, {
       method: 'PUT',
       body: JSON.stringify({
         establishment_name: data.get('establishment_name'),
