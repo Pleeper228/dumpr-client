@@ -118,7 +118,7 @@ class App extends Component {
         })
       } else {
         console.log('heyyoooo')
-        window.location = 'https://dumpr-client.herokuapp.com//app/login'
+        window.location = 'https://dumpr-client.herokuapp.com/app/login'
         // this.setState({
         //   response: <Redirect to='/app/login' />
         // })
