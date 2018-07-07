@@ -119,9 +119,6 @@ class App extends Component {
       } else {
         console.log('heyyoooo')
         window.location = 'https://dumpr-client.herokuapp.com/app/login'
-        // this.setState({
-        //   response: <Redirect to='/app/login' />
-        // })
       }
     })
   }
@@ -141,7 +138,6 @@ class App extends Component {
       }),
       headers: getHeaders()
     })
-    // .then(handleErrors)
     .then(res => res.json())
     .then(res => {
       if (res.error) {
@@ -150,9 +146,6 @@ class App extends Component {
         })
       } else {
         window.location = 'https://dumpr-client.herokuapp.com/app/bathrooms'
-        // this.setState({
-        //   errorOrRedirect: <Redirect to='/app/bathrooms' />
-        // })
       }
     })
   }
@@ -174,7 +167,6 @@ class App extends Component {
       }),
       headers: getHeaders()
     })
-    // .then(handleErrors)
     .then(res => res.json())
     .then(res => {
       if (res.error) {
@@ -189,9 +181,6 @@ class App extends Component {
         currentBathroom.rating = data.get('rating')
 
         window.location = 'https://dumpr-client.herokuapp.com/app/bathrooms'
-        // this.setState({
-        //   errorOrRedirect: <Redirect to='/app/bathrooms' />
-        // })
       }
     })
   }
@@ -235,17 +224,6 @@ class App extends Component {
         </div>
       </Router>
     )
-    // (
-    //   <div className="App">
-    //     {this.renderHeader()}
-    //     <main className='content container'>
-    //       <BathroomsContainer bathrooms={this.state.bathrooms} />
-    //       <LoginForm onSuccess={this.handleLoginSuccess}/>
-    //       <LogoutButton logout={this.logout}/>
-    //       {/* <CreateBathroomForm /> */}
-    //     </main>
-    //   </div>
-    // );
   }
 }
 

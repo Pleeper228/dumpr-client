@@ -4,28 +4,6 @@ import './bathroom-details.css'
 
 
 export class BathroomDetails extends React.Component {
-  // constructor(props) {
-  //   super(props)
-  //   this.state = {
-  //     bathroom: []
-  //   }
-  //   this.getBathroom = this.getBathroom.bind(this)
-  // }
-
-  // componentDidMount() {
-    // this.getBathroom()
-    // fetch(`https://dumpr-server.herokuapp.com/api/v1/bathrooms/${this.props.match.params.bathroomId}`)
-    // .then(res => res.json())
-    // .then(res => {
-    //   this.setState({
-    //     bathroom: res
-    //   })
-    // })
-  // }
-  //
-  // getBathroom() {
-  //
-  // }
 
   componentDidMount() {
     window.scrollTo(0, 0)

@@ -55,7 +55,6 @@ export class UpdateBathroomForm extends React.Component {
       }),
       headers: getHeaders()
     })
-    // .then(handleErrors)
     .then(res => res.json())
     .then(res => {
       if (res.error) {
