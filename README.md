@@ -27,6 +27,7 @@ The app is now available!
 ### MY PUBLIC LICENSE
 
 Version 1, December 2018
+
 Copyright (C) 2018 Brevon Good
 
 Everyone is permitted to copy and distribute verbatim or modified
