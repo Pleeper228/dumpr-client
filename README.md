@@ -1,4 +1,4 @@
-## Dumpr React App
+# Dumpr React App
 
 Dumpr is a web application that allows users to create bathrooms with a brief description of the bathroom, a photo link, address and rating. You can also view all the bathrooms in hopes of finding a nice one near you!. Think Yelp for bathrooms!
 
@@ -23,11 +23,11 @@ The app is now available!
 
 If you have any questions about the app you can email me at brevonbgood@comcast.net!
 
-### DON'T BE A DICK PUBLIC LICENSE
+#### DON'T BE A DICK PUBLIC LICENSE
 
 > Version 1.1, December 2016
 
-> Copyright (C) [2018] [Brevon Good]
+> Copyright (C) 2018 Brevon Good
 
 Everyone is permitted to copy and distribute verbatim or modified
 copies of this license document.
