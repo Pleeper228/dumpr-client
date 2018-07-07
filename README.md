@@ -5,7 +5,6 @@ Dumpr is a web application that allows users to create bathrooms with a brief de
 ---
 
 This is the client side React app for Dumpr. It talks to an Express server and a Postgres database to store information. A link to the server repo can be found [here](https://github.com/Pleeper228/dumpr-server) and the deployed site can be found [here](https://dumpr-client.herokuapp.com).
-<<<<<<< HEAD
 
 ---
 
@@ -21,15 +20,14 @@ The app is now available!
 
 ---
 
-If you have any questions about the app you can email me at brevonbgood@comcast.net!
+> If you have any questions about the app you can email me at brevonbgood@comcast.net!
 
 
 
 ### MY PUBLIC LICENSE
 
-> Version 1, December 2018
-
-> Copyright (C) 2018 Brevon Good
+Version 1, December 2018
+Copyright (C) 2018 Brevon Good
 
 Everyone is permitted to copy and distribute verbatim or modified
 copies of this license document.
