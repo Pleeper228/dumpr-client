@@ -61,7 +61,7 @@ describe('End to end tests!!', () => {
     cy.get('input[name="username"]').type('Pleeper')
     cy.get('input[name="password"]').type('password')
     cy.get('input[type="submit"]').click()
-    
+
     cy.get('.logout-button').click()
 
     cy.get('.signout-container h1').should('have.text', 'You have been successfully logged out. Smell ya later!')
